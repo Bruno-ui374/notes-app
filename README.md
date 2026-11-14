@@ -4,6 +4,10 @@ This project uses TypeScript, React, Vite, Tailwind CSS, Astryx, Framer Motion, 
 
 I created this software because I had problems with  monitoring the tasks I had each day, and I did not find an app that has the user experience I want so i decided to design customized the way I want.
 
+# Video
+Here is a walk through video: https://youtu.be/rHzVfBrGr4U?si=pjnCuhj_XMK3oJwr
+
+
 # Development Environment
 
 I used Vs code to code the app. Used figma and to come up with the wireframes.
