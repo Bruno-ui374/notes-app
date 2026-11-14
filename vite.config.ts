@@ -16,7 +16,7 @@ const removePureAnnotations = () => ({
 export default defineConfig(({ mode }) => ({
   plugins: [react(), removePureAnnotations()],
   build: {
-    minify: mode === "production",
+    minify: false,
     cssMinify: mode === "production",
     sourcemap: mode !== "production",
     reportCompressedSize: false,
