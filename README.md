@@ -1,36 +1,26 @@
-# Mart Task Planner
+Mart Task Planner is a responsive React task board for organizing work into groups, tracking status, and reviewing deadlines. It includes board, calendar, and insights views, plus light and dark them
 
-Mart Task Planner is a responsive React task board for organizing work into
-groups, tracking status, and reviewing deadlines. It includes board, calendar,
-and insights views, plus light and dark themes.
+This project uses TypeScript, React, Vite, Tailwind CSS, Astryx, Framer Motion, and Lucide icons.
 
-## Development
+I created this software because I had problems with  monitoring the tasks I had each day, and I did not find an app that has the user experience I want so i decided to design customized the way I want.
 
-This project uses TypeScript, React, Vite, Tailwind CSS, Framer Motion, and
-Lucide icons.
+# Development Environment
 
-```bash
-npm install
-npm run dev
-```
+I used Vs code to code the app. Used figma and to come up with the wireframes.
 
-Create a production build with:
+The project uses TypeScript, React, Vite, Tailwind CSS, Astryx,  Framer Motion, and Lucide icons.
 
-```bash
-npm run build
-```
+# Useful Websites
 
-The generated files in `dist/` intentionally use readable `app.js` and
-`index.css` names and retain line breaks to make local inspection easier.
+{Make a list of websites that you found helpful in this project}
 
-## Project structure
+- Astryx https://astryx.atmeta.com/
+- Framer Motion https://motion.dev/
 
-- `src/App.tsx` - small application entrypoint
-- `src/features/task-board/` - task board feature UI and its public export
-- `src/controllers/useTaskBoard.ts` - task and group state management
-- `src/models/task.ts` - shared task and group types
-- `src/styles.css` - application styles
-- `task-operation-demo.ts` - standalone TypeScript recursion and async demo
+# Future Work
 
-The feature folder keeps the task board implementation together while the
-root entrypoint remains stable for `main.tsx` and future features.
+These are the things I plan to add
+
+- Backend
+- Analytics
+- Lottie animations and custom svgs to boost the user experience
