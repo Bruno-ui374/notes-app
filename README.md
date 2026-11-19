@@ -12,14 +12,12 @@ Here is a walk through video: https://youtu.be/rHzVfBrGr4U?si=pjnCuhj_XMK3oJwr
 
 I used Vs code to code the app. Used figma and to come up with the wireframes.
 
-The project uses TypeScript, React, Vite, Tailwind CSS, Astryx,  Framer Motion, and Lucide icons.
+The project uses TypeScript, React, Vite, Tailwind CSS, and Lucide icons.
 
 # Useful Websites
 
-{Make a list of websites that you found helpful in this project}
-
-- Astryx https://astryx.atmeta.com/
-- Framer Motion https://motion.dev/
+React https://react.dev/
+Typescript https://www.typescriptlang.org/
 
 # Future Work
 

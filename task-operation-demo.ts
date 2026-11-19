@@ -1,6 +1,7 @@
 class TaskOperationError extends Error {
   public readonly code: string;
 
+  /** Creates an error with a machine-readable operation code. */
   constructor(code: string, message: string) {
     super(message);
     this.name = "TaskOperationError";
@@ -18,8 +19,10 @@ interface RecursiveTaskNode {
 class SprintNoteManager {
   private tasks: RecursiveTaskNode[] = [];
 
+  /** Creates a manager for a named task group. */
   constructor(public readonly groupName: string) {}
 
+  /** Adds a task after validating that it has a useful title. */
   public addTask(node: RecursiveTaskNode): void {
     if (!node.title || node.title.trim().length < 2) {
       throw new TaskOperationError(
@@ -31,10 +34,12 @@ class SprintNoteManager {
     this.tasks.push(node);
   }
 
+  /** Returns a copy of the top-level task list. */
   public getTaskList(): RecursiveTaskNode[] {
     return [...this.tasks];
   }
 
+  /** Counts a task and all of its nested subtasks recursively. */
   public countTotalNodesRecursive(
     nodes: RecursiveTaskNode[] = this.tasks,
   ): number {
@@ -51,6 +56,7 @@ class SprintNoteManager {
     return count;
   }
 
+  /** Simulates asynchronously syncing the task tree to a remote board. */
   public async syncToRemoteBoard(): Promise<{
     syncedCount: number;
     timestamp: string;
@@ -76,6 +82,7 @@ class SprintNoteManager {
   }
 }
 
+/** Runs the TypeScript demonstration and handles expected errors. */
 async function runTaskOperationDemo(): Promise<void> {
   console.log("=== Mart Task Operation Demo ===\n");
 
